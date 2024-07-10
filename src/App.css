@@ -1,0 +1,4 @@
+.small-globe {
+    width: 20%; /* Adjust the size as needed */
+    height: auto; /* This maintains the aspect ratio */
+}

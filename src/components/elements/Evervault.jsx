@@ -9,7 +9,7 @@ export function EvervaultCardDemo() {
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
 
-      <EvervaultCard text="hover" />
+      <EvervaultCard imageUrl="https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg" />
 
       <h2 className="dark:text-white text-black mt-4 text-sm font-light">
         Hover over this card to reveal an awesome effect. Running out of copy
