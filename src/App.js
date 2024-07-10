@@ -16,7 +16,7 @@ function App() {
           </div>
           <div className="z-00 relative"> {/* Content on top of the background */}
               <FlipWordsDemo/>
-              <div className="flex justify-between"> {/* Adjusted for even spacing */}
+              <div className="flex justify-between p-20" > {/* Adjusted for even spacing */}
                     <ThreeDCardDemo/>
                     <ThreeDCardDemo/>
                     <ThreeDCardDemo/>
