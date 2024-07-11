@@ -1,10 +1,5 @@
 import React from 'react'
-import { FlipWordsDemo } from '../components/elements/Flipwords.jsx';
-import { EvervaultCardDemo } from '../components/elements/Evervault.jsx';
-import { GlobeDemo } from '../components/elements/Globe.jsx';
-import { SparklesPreview } from '../components/elements/Sparkles.jsx';
-import { FloatingNavDemo } from '../components/elements/Floating.jsx';
-import { ThreeDCardDemo } from '../components/elements/Threedcard.jsx';
+
 import { BentoGridDemo } from '../components/elements/Bento-grid.jsx';
 import Use_Case from '../assets/Use_Case.png';
 const Usecase = () => {
