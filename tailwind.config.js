@@ -15,6 +15,9 @@ module.exports = {
   //darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        'clash': ['"Clash Display"', 'sans-serif'], // Add Clash Display font
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

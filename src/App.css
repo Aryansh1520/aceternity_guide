@@ -1,4 +1,37 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Any additional custom styles... */
+
 .small-globe {
     width: 20%; /* Adjust the size as needed */
     height: auto; /* This maintains the aspect ratio */
 }
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scroller {
+    --animation-duration: 20s; /* default animation duration */
+    --animation-direction: forwards; /* default animation direction */
+  }
+  
+  .scroller .animate-scroll {
+    animation: scroll var(--animation-duration) linear infinite var(--animation-direction);
+    display: flex;
+  }
+  
+  .scroller ul {
+    display: flex;
+    width: 200%; /* Double the width to accommodate duplicated items */
+  }
+  
