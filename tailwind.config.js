@@ -1,6 +1,8 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
-const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette").default;
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -12,8 +14,19 @@ module.exports = {
   ],
   //darkMode: "class",
   theme: {
-    extend: {},
-    // rest of the code from the theme section can go here
+    extend: {
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
+    },
   },
   plugins: [addVariablesForColors],
 };

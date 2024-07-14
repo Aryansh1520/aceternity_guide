@@ -2,11 +2,11 @@
 import React from "react";
 import { SparklesCore } from "../ui/sparkles";
 
-export function SparklesPreview() {
+export function SparklesPreview({ name = "Your Name", textSize = "text-3xl lg:text-5xl" }) {
   return (
-    <div className="h-[12rem] w-[25rem] bg-black flex flex-col items-center justify-center overflow-hidden rounded-full">
-      <h1 className="text-3xl lg:text-5xl font-bold text-center text-white relative z-20">
-        Aryan Sharma
+    <div className="h-[12rem] w-[25rem] flex flex-col items-center justify-center overflow-hidden rounded-full">
+      <h1 className={`${textSize} font-bold text-center text-white relative z-20`}>
+        {name}
       </h1>
       <div className="w-[20rem] h-20 relative">
         {/* Gradients */}
@@ -26,7 +26,7 @@ export function SparklesPreview() {
         />
 
         {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(175px_100px_at_top,transparent_20%,white)]"></div>
+        <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(175px_100px_at_top,transparent_20%,white)]"></div>
       </div>
     </div>
   );
