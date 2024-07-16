@@ -4,7 +4,6 @@ import React from 'react';
 // import Projects from './pages/Projects.js';
 // import OurTeam from './pages/OurTeam.js';
 // import ContactUs from './pages/ContactUs.js';
-import { TracingBeamDemo } from './components/elements/TracingBeam.jsx';
 import Tan1 from "./assets/tan1.png";
 
 function App() {
